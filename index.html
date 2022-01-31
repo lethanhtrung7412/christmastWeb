@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./responsive/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">
+                <i class="fas fa-gifts"></i> Gifts
+            </a>
+        </div>
+        <nav class="menu">
+
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Shop</a>
+            <a href="#">Gallery</a>
+            <a href="#">Message</a>
+            <a href="#">Blogs</a>
+
+        </nav>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#"><i class="fas fa-heart"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" placeholder="Search..." name="" id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </div>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="slide active" style="background:url(access/home-bg-1.png) no-repeat; background-size: cover; background-position: center;">
+            <div class="content">
+                <span>merry christmas</span>
+                <h3>upto 60% off</h3>
+                <a href="#" class="btn">Shop now</a>
+            </div>
+        </div>
+
+        <div class="slide" style="background:url(access/home-bg-2.png) no-repeat; background-size: cover; background-position: center;">
+            <div class="content">
+                <span>ho - ho - ho</span>
+                <h3>HAPPY HOLIDAY</h3>
+                <a href="#" class="btn">Shop now</a>
+            </div>
+        </div>
+        <div onclick="prev()" id="prev-slide" class="fas fa-angle-left">
+
+        </div>
+        <div onclick="next()" id="next-slide" class="fas fa-angle-right">
+
+        </div>
+
+    </section>
+
+    <!-- Category -->
+    <section class="category">
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="access/category-1.png">
+                <h3>Christmas decorations</h3>
+            </a>
+            <a href="#" class="box"><img src="access/category-2.png">
+                <h3>Christmas decorations</h3>
+            </a>
+            <a href="#" class="box"><img src="access/category-3.png">
+                <h3>Christmas decorations</h3>
+            </a>
+            <a href="#" class="box"><img src="access/category-4.png">
+                <h3>Christmas decorations</h3>
+            </a>
+            <a href="#" class="box"><img src="access/category-5.png">
+                <h3>Christmas decorations</h3>
+            </a>
+            <a href="#" class="box"><img src="access/category-6.png">
+                <h3>Christmas decorations</h3>
+            </a>
+        </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+
+        <div class="image">
+            <img src="./access/about-img.png" alt="">
+        </div>
+
+        <div class="content">
+            <div class="box">
+                <h3>Christmas Sales In On</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt nobis eaque totam architecto iure quisquam nihil, error consequuntur cumque maxime? Aliquam cupiditate, ea similique voluptates nihil assumenda labore veritatis consequatur!</p>
+                <a href="" class="btn">Read Me</a>
+            </div>
+
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-tree"></i>
+                    <p>Christmas Tree</p>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-cookie"></i>
+                    <p>Christmas Cookies</p>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-gifts"></i>
+                    <p>Christmas Gifts</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Shop -->
+    <section class="shop" id="shop">
+        <h1 class="heading">Our Shop</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="./access/product-1.png" alt="">
+                    <div class="icons">
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>christmas decore</h3>
+                    <div class="price">$24.99 <span>$28.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="./access/product-2.png" alt="">
+                    <div class="icons">
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>christmas decore</h3>
+                    <div class="price">$24.99 <span>$28.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./access/product-3.png" alt="">
+                    <div class="icons">
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>christmas decore</h3>
+                    <div class="price">$24.99 <span>$28.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./access/product-4.png" alt="">
+                    <div class="icons">
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>christmas decore</h3>
+                    <div class="price">$24.99 <span>$28.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./access/product-5.png" alt="">
+                    <div class="icons">
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>christmas decore</h3>
+                    <div class="price">$24.99 <span>$28.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./access/product-6.png" alt="">
+                    <div class="icons">
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>christmas decore</h3>
+                    <div class="price">$24.99 <span>$28.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="banner" id="banner">
+        <div class="content">
+            <span>special offer</span>
+            <h3>Upto 50% Off</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magnam iste corrupti laudantium aliquid nisi dignissimos ad placeat, repellat dolores!</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </section>
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <h1 class="heading">OUR GALLERY</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./access/gallery-img-1.jpg" alt="">
+                <div class="content">
+                    <h3>merry christmas</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, blanditiis!</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./access/gallery-img-2.jpg" alt="">
+                <div class="content">
+                    <h3>merry christmas</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, blanditiis!</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./access/gallery-img-3.jpg" alt="">
+                <div class="content">
+                    <h3>merry christmas</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, blanditiis!</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./access/gallery-img-4.jpg" alt="">
+                <div class="content">
+                    <h3>merry christmas</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, blanditiis!</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./access/gallery-img-5.jpg" alt="">
+                <div class="content">
+                    <h3>merry christmas</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, blanditiis!</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./access/gallery-img-6.jpg" alt="">
+                <div class="content">
+                    <h3>merry christmas</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, blanditiis!</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- message -->
+    <section class="message" id="message">
+        <form action="">
+            <h3>get in touch</h3>
+            <input type="text" class="box" name="full-name" id="full-name" placeholder="Your name">
+            <input type="text" class="box" name="email" id="email" placeholder="Email address">
+            <input type="text" class="box" name="phone-number" id="phone-number" placeholder="Phone number">
+            <textarea name="" placeholder="Message" id="message" cols="30" rows="10" class="box"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    <!-- blogs -->
+    <section class="blogs" id="blogs">
+        <div class="heading">our daily blogs</div>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="./access/blog-1.jpg">
+                </div>
+                <div class="content">
+                    <div class="date">
+                        <h3>21</h3>
+                        <span>Jan</span>
+                    </div>
+                    <a href="" class="user"><i class="fas fa-user"></i>   by admin</a>
+                    <a href="" class="blog-title">blog title goes here</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, minus?</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./access/blog-2.jpg">
+                </div>
+                <div class="content">
+                    <div class="date">
+                        <h3>21</h3>
+                        <span>Jan</span>
+                    </div>
+                    <a href="" class="user"> <i class="fas fa-user"></i> by admin</a>
+                    <a href="" class="blog-title">blog title goes here</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, minus?</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./access/blog-3.jpg">
+                </div>
+                <div class="content">
+                    <div class="date">
+                        <h3>21</h3>
+                        <span>Jan</span>
+                    </div>
+                    <a href="" class="user"><i class="fas fa-user"></i>   by admin</a>
+                    <a href="" class="blog-title">blog title goes here</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, minus?</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- service -->
+    <section class="service" id="service">
+        <div class="box">
+            <img src="./access/icon-1.png">
+            <h3>Free Delivery</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, nam.</p>
+        </div>
+        <div class="box">
+            <img src="./access/icon-2.png">
+            <h3>Secure Payment</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, nam.</p>
+        </div>
+        <div class="box">
+            <img src="./access/icon-3.png">
+            <h3>24/7 support</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, nam.</p>
+        </div>
+    </section>
+    <script src="./index.js" defer></script>
+</body>
+
+</html>
